@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300;1,400&family=Roboto:wght@300;400;500&family=Sevillana&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/70d557b400.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <h1 class="heading">PRODIGY INFOTECH</h1>
+            <div class="nav-links" id="NavLinks">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars charli" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Create Your Own Website</h1>
+            <p class="ss">
+                Web design is the art of planning and arranging content on a website so that it can be shared and
+                accessed online with the world. A combination of aesthetic and functional elements, web design is a
+                type of digital design that determines the look of a website—such as its colors, fonts, graphics and
+                user interface
+
+            </p>
+            <a href="#" class="btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!-- ############ javascript################ !-->
+    <script>
+        var NavLinks = document.getElementById("NavLinks");
+        function showMenu() {
+            NavLinks.style.right = "0";
+        }
+        function hideMenu() {
+            NavLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
